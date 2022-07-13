@@ -2,7 +2,6 @@
 .container_small {
     max-width: 1340px;
     margin: 0 auto;
-    border: 2px solid red;
 }
 
 .container_big {
@@ -18,16 +17,16 @@
 
 /* hero */
 .hero .hero_top {
-    height: 700px;
+    /* height: 700px; */
     background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
     background-size: cover;
     color: white;
+    background-position: center;
 }
 
-
-/* .hero .hero_bottom img {
-    max-height: 100px;
-} */
+.hero .card-body {
+    margin-top: 360px;
+}
 
 
 
