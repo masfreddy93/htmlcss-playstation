@@ -23,7 +23,6 @@ img {
     align-items: center;
 }
 
-
 #header .dropdown-toggle::after {
     border: none;
     content: '\f107';
@@ -32,8 +31,12 @@ img {
 
 /* hero */
 .hero .hero_top {
-    /* height: 700px; */
     background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
+}
+
+.hero .hero_top,
+.section_2 {
+    /* height: 700px; */
     background-size: cover;
     color: white;
     background-position: center;
@@ -48,10 +51,6 @@ img {
 .section_1 .card h5 {
     color: blue;
     font-size: 1rem;
-}
-
-.section_1 .col img {
-    max-width: 100%;
 }
 
 .section_1 .bottom_carousel .col {
@@ -79,9 +78,6 @@ img {
 /* section_2 */
 .section_2 {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
-    background-size: cover;
-    color: white;
-    background-position: center;
 }
 
 /* .section_2 .card-body {
@@ -118,11 +114,31 @@ img {
 }
 
 
+/* footer */
+/* footer_top */
+
+@media screen and (min-width: 992px){
+    .footer_top .col {
+        max-width: calc(100% / 8);
+    }
+}
 
 
+/* footer_bottom */
+.footer_bottom {
+    background-color: #01439C;
+}
 
-.debug{
-    background-color: yellow;
-    border: 2px solid blue;
-    height: 100px;
+.footer_bottom .col a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_bottom .sony_logo {
+    max-height: 60px;
+}
+
+.footer_bottom ul {
+    padding: 0;
+    margin: 0;
 }
