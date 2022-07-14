@@ -15,10 +15,16 @@
     color: black;
 }
 
+#header .dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+
+
 #header .dropdown-toggle::after {
     border: none;
     content: '\f107';
-    font: 500;
+    font: var(--fa-font-solid);
 }
 
 /* hero */
@@ -34,6 +40,28 @@
     margin-top: 360px;
 }
 
+
+/* section-1 */
+.section_1 .card h5 {
+    color: blue;
+    font-size: 1rem;
+}
+
+.section_1 .col img {
+    max-width: 100%;
+}
+
+.section_1 .col .card-body {
+    margin-top: 100px;
+}
+
+.section_1 .col .card-body img {
+    max-width: 50%;
+}
+
+.section-1 .col .card-body h5{
+    font-size: 1rem;
+}
 
 
 
