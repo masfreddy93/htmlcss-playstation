@@ -15,6 +15,12 @@
     color: black;
 }
 
+#header .dropdown-toggle::after {
+    border: none;
+    content: '\f107';
+    font: 500;
+}
+
 /* hero */
 .hero .hero_top {
     /* height: 700px; */
