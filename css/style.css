@@ -107,12 +107,14 @@ img {
     background-color: #BEBCBB;
 }
 
-.section_5 .btn {
-    
+.section_5 .ps_logo,
+.section_7 .ps_logo {
+    max-width: 50%;
 }
 
-.section_5 .ps_logo {
-    max-width: 50%;
+/* section_7 */
+.section_7 {
+    background-color: #161C3B;
 }
 
 
