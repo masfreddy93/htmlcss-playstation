@@ -31,12 +31,11 @@ img {
 
 /* hero */
 .hero .hero_top {
-    background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
+    background-image: url(../img/jumbo-bg.png);
 }
 
 .hero .hero_top,
 .section_2 {
-    /* height: 700px; */
     background-size: cover;
     color: white;
     background-position: center;
@@ -46,6 +45,27 @@ img {
     margin-top: 360px;
 }
 
+.hero .card-body .logo-returnal{
+    max-height: 30px;
+}
+
+/* @media screen and (min-width: 992px){
+    .hero .card-body .logo-returnal{
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .hero .card-body .logo-returnal{
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 576px){
+    .hero .card-body .logo-returnal{
+        height: 15px;
+    }
+} */
 
 /* section-1 */
 .section_1 .card h5 {
@@ -56,11 +76,23 @@ img {
 .section_1 .bottom_carousel .col {
     filter: opacity(0.8);
     cursor: pointer;
+    position: relative;
 }
 
 .section_1 .bottom_carousel .col:hover{
     filter: opacity(1);
-    border-bottom: 2px solid aqua;
+    /* border-bottom: 2px solid aqua; */
+}
+
+.section_1 .bottom_carousel .col:hover::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: aqua;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 
@@ -80,15 +112,8 @@ img {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 
-/* .section_2 .card-body {
-    margin-top: 360px;
-} */
-
 .section_2 img {
     max-height: 90px;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
 }
 
 @media screen and (min-width: 768px) {
