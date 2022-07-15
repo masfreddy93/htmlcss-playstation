@@ -1,4 +1,34 @@
 /* generals */
+:root {
+    font-family: 'Anek Latin', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    --bs-font-sans-serif: 'Roboto', sans-serif;
+}
+
+body {
+    --bs-body-font-family: var(--bs-font-sans-serif);
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+footer h2 {
+    font-size: 2.5rem;
+}
+
+.p_small {
+    font-size: 1.125rem;
+}
+
+.p_big {
+    font-size: 1.375rem;
+}
+
+
+
 .container_small {
     max-width: 1340px;
     margin: 0 auto;
@@ -14,16 +44,16 @@ img {
 }
 
 /* header */
-#header a{
+.header a{
     color: black;
 }
 
-#header .dropdown-toggle {
+.header .dropdown-toggle {
     display: flex;
     align-items: center;
 }
 
-#header .dropdown-toggle::after {
+.header .dropdown-toggle::after {
     border: none;
     content: '\f107';
     font: var(--fa-font-solid);
@@ -45,27 +75,23 @@ img {
     margin-top: 360px;
 }
 
-.hero .card-body .logo-returnal{
-    max-height: 30px;
+.hero .card-body .logo_returnal{
+    height: 10px;
 }
 
-/* @media screen and (min-width: 992px){
-    .hero .card-body .logo-returnal{
+
+@media screen and (min-width: 768px) {
+    .hero .card-body .logo_returnal{
         height: 30px;
     }
 }
 
-@media screen and (min-width: 768px){
-    .hero .card-body .logo-returnal{
-        height: 25px;
-    }
-}
-
-@media screen and (min-width: 576px){
-    .hero .card-body .logo-returnal{
+/* @media screen and (min-width: 576px) {
+    .hero .card-body .logo_returnal{
         height: 15px;
     }
 } */
+
 
 /* section-1 */
 .section_1 .card h5 {
