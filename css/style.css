@@ -87,7 +87,6 @@ img {
 
 .section_1 .bottom_carousel .col:hover{
     filter: opacity(1);
-    /* border-bottom: 2px solid aqua; */
 }
 
 .section_1 .bottom_carousel .col:hover::after {
@@ -99,11 +98,6 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-
-.section_1 .col .card-body h5{
-    font-size: 1rem;
 }
 
 .section_1 .col:nth-child(2) .card-body h5::after,
