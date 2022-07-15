@@ -1,4 +1,4 @@
-/* generals */
+/* GENERALS */
 :root {
     font-family: 'Anek Latin', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -36,7 +36,7 @@ img {
     max-width: 100%;
 }
 
-/* header */
+/* HEADER */
 .header a{
     color: black;
 }
@@ -52,6 +52,7 @@ img {
     font: var(--fa-font-solid);
 }
 
+/* MAIN */
 /* hero */
 .hero .hero_top {
     background-image: url(../img/jumbo-bg.png);
@@ -139,7 +140,7 @@ img {
 }
 
 
-/* footer */
+/* FOOTER */
 /* footer_top */
 
 @media screen and (min-width: 992px){
