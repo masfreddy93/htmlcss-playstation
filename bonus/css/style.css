@@ -52,6 +52,38 @@ img {
     font: var(--fa-font-solid);
 }
 
+.header .btn_header:hover::after {
+    content: "";
+    display: block;
+    border: 2px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(1.2);
+}
+
+.header_bottom img:hover{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 50ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* MAIN */
 /* hero */
 .hero .hero_top {
@@ -73,6 +105,15 @@ img {
     height: 70px;
 }
 
+.hero_bottom .card img:hover,
+.section_3 .card-body:hover
+{
+    transform: scale(1.1);
+    transition-delay: 50ms;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
 
 /* section-1 */
 .section_1 .card h5 {
@@ -86,11 +127,12 @@ img {
     position: relative;
 }
 
-.section_1 .bottom_carousel .col:hover{
+.section_1 .bottom_carousel .col:hover {
     filter: opacity(1);
 }
 
-.section_1 .bottom_carousel .col:hover::after {
+.section_1 .bottom_carousel .col:hover::after
+ {
     content: "";
     display: block;
     height: 2px;
